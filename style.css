@@ -1,0 +1,14 @@
+ html,body{width:100%}
+
+.header{
+	background-color: #f3f3f3;
+}
+
+.content{
+	padding:0;
+}
+
+.content{
+	background-color: #ffffff;
+	padding:10px;
+}

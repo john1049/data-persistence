@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="movieDB">
+
+<head>
+	
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="style.css"  rel="stylesheet">
+	<script src="scripts/app.js"></script>
+
+</head>
+<body ng-controller="MainController">
+	<div class="container-fluid header">
+		<h1 class="text-center"> The Movie Database </h1>
+	</div>
+
+	<div class="container-fluid content">
+		<div class="col-sm-4 sidebar">
+			
+			<ul class="list-group">
+				<li class="list-group-item"><a href="#!/movie/0">Brazil</a></li>
+				<li class="list-group-item"><a href="#!/movie/1">Pulp Fiction</a></li>
+				<li class="list-group-item"><a href="#!/movie/2">Yojimbo</a></li>
+				<li class="list-group-item"><a href="#!/movie/3">Fight Club</a></li>
+				<li class="list-group-item"><a href="#!/movie/4">Arrival</a></li>
+	
+			</ul>
+		</div>
+
+		<div class="col-sm-8" id="main">
+			<div ng-view></div>
+		</div>
+	</div> 
+</body>
+</html>

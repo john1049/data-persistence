@@ -1,0 +1,41 @@
+
+
+	<div class="row">
+		<h1>{{movie.title}}</h1>
+	</div>
+
+	<div class="row">
+		<img src={{movie.poster}} width="125" height="183.75">
+	</div>
+
+	<div class="row">
+		<h3>Director</h3>
+		<p>{{movie.director}}</p>
+	</div>
+
+	<div class="row">
+		<h3>Description</h3>
+		<p>{{movie.description}}</p>
+	</div>
+
+	<div class="row">
+		<h3>Year</h3>
+		<p>{{movie.year}}</p>
+	</div>
+
+	<div class="row">
+		<h3>Starring</h3>
+				<ul ng-repeat="actor in movie.starring">
+		<li>{{actor}}</li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<h3>Runtime</h3>
+		<p>{{movie.runtime}}</p>
+	</div>
+
+	<div class="btn-group btn-group-justified">
+		<a class="btn btn-default" ng-click="prev()">Previous</a>
+		<a class="btn btn-primary" ng-click="next()">Next</a>
+	</div> 
